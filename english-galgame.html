@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语冒险 - Learn English Galgame</title>
+    <link rel="stylesheet" href="english-galgame.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- 背景图片 -->
+        <div class="background" id="background"></div>
+        
+        <!-- 人物角色 -->
+        <div class="character-section">
+            <div class="character" id="character">
+                <div class="character-avatar" id="characterAvatar"></div>
+                <div class="character-name" id="characterName">Emma</div>
+            </div>
+        </div>
+
+        <!-- 游戏界面 -->
+        <div class="game-ui">
+            <!-- 对话框 -->
+            <div class="dialogue-box" id="dialogueBox">
+                <div class="dialogue-text" id="dialogueText">
+                    <span class="speaker" id="speaker">Emma:</span>
+                    <span class="content" id="content">Hello! Welcome to English Adventure!</span>
+                </div>
+                <div class="translation" id="translation">你好！欢迎来到英语冒险！</div>
+            </div>
+
+            <!-- 选择题区域 -->
+            <div class="choices-section" id="choicesSection">
+                <div class="choice-title">Choose your response / 选择你的回应</div>
+                <div class="choices" id="choices">
+                    <!-- 动态生成选项 -->
+                </div>
+            </div>
+
+            <!-- 游戏控制 -->
+            <div class="game-controls">
+                <button class="control-btn" id="continueBtn" style="display: none;">继续 / Continue</button>
+                <button class="control-btn start-btn" id="startBtn">开始游戏 / Start Game</button>
+                <button class="control-btn" id="resetBtn">重新开始 / Reset</button>
+            </div>
+
+            <!-- 进度条 -->
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    进度 / Progress: <span id="progressText">0/10</span>
+                </div>
+            </div>
+
+            <!-- 分数板 -->
+            <div class="stats-board">
+                <div class="stat">
+                    <span class="stat-label">正确率 / Accuracy:</span>
+                    <span class="stat-value" id="accuracy">0%</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">单词学习 / Words:</span>
+                    <span class="stat-value" id="wordsCount">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">等级 / Level:</span>
+                    <span class="stat-value" id="level">1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="english-galgame.js"></script>
+</body>
+</html>
